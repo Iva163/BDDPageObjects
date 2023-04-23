@@ -27,13 +27,12 @@ public class DataHelper {
 
     @Value
     public static class CardInfo {
-        private String card1;
-        private String card2;
+        private String cardNumber;
     }
 
-    public static CardInfo getCardNumber() {
-        return new CardInfo("5559 0000 0000 0001", "5559 0000 0000 0002");
+    public static CardInfo setCardNumber(String number) {
+
+            return new CardInfo(number);
+
     }
-
-
 }
