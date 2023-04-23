@@ -23,7 +23,7 @@ public class MoneyTransferTest {
         int card1BalanceTo = dashboardPage.getCardBalance(1);
         int card2BalanceTo = dashboardPage.getCardBalance(2);
         var topUpPage = dashboardPage.topUpCard(1);
-        topUpPage.topUpCard(String.valueOf(amount), DataHelper.setCardNumber(number).getCardNumber());
+        topUpPage.topUpCard(String.valueOf(amount), number);
         dashboardPage.updateButton();
         int card1BalanceFrom = dashboardPage.getCardBalance(1);
         int card2BalanceFrom = dashboardPage.getCardBalance(2);
@@ -45,7 +45,7 @@ public class MoneyTransferTest {
         int card1BalanceTo = dashboardPage.getCardBalance(1);
         int card2BalanceTo = dashboardPage.getCardBalance(2);
         var topUpPage = dashboardPage.topUpCard(2);
-        topUpPage.topUpCard(String.valueOf(amount), DataHelper.setCardNumber(number).getCardNumber());
+        topUpPage.topUpCard(String.valueOf(amount), number);
         dashboardPage.updateButton();
         int card1BalanceFrom = dashboardPage.getCardBalance(1);
         int card2BalanceFrom = dashboardPage.getCardBalance(2);
@@ -67,7 +67,7 @@ public class MoneyTransferTest {
         int card1BalanceTo = dashboardPage.getCardBalance(1);
         int card2BalanceTo = dashboardPage.getCardBalance(2);
         var topUpPage = dashboardPage.topUpCard(1);
-        topUpPage.topUpCard(String.valueOf(amount), DataHelper.setCardNumber(number).getCardNumber());
+        topUpPage.topUpCard(String.valueOf(amount), number);
         dashboardPage.updateButton();
         int card1BalanceFrom = dashboardPage.getCardBalance(1);
         int card2BalanceFrom = dashboardPage.getCardBalance(2);

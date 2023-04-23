@@ -25,14 +25,14 @@ public class DataHelper {
         return new VerificationCode("12345");
     }
 
-    @Value
-    public static class CardInfo {
-        private String cardNumber;
-    }
-
-    public static CardInfo setCardNumber(String number) {
-
-            return new CardInfo(number);
-
-    }
+//    @Value
+//    public static class CardInfo {
+//        private String cardNumber;
+//    }
+//
+//    public static CardInfo setCardNumber(String number) {
+//
+//            return new CardInfo(number);
+//
+//    }
 }
