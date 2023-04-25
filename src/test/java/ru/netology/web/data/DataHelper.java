@@ -2,6 +2,9 @@ package ru.netology.web.data;
 
 import lombok.Value;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class DataHelper {
     private DataHelper() {
     }
@@ -23,6 +26,19 @@ public class DataHelper {
 
     public static VerificationCode getVerificationCodeFor(AuthInfo authInfo) {
         return new VerificationCode("12345");
+    }
+
+    @Value
+    public static class CardInfo {
+        private String cardNumber;
+    }
+
+    public static CardInfo firstCard() {
+        return new CardInfo("5559 0000 0000 0001");
+    }
+
+    public static CardInfo secondCard() {
+        return new CardInfo("5559 0000 0000 0002");
     }
 
 }
